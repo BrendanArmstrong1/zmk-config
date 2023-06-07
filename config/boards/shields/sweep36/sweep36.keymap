@@ -62,7 +62,7 @@
         //│  |       │  #       │  <       │  >       │  &       │   │  =       │  (       │  )       │  @       │  !       │
             &kp PIPE   &kp NUHS   &kp LT     &kp GT     &kp AMPS       &kp EQUAL  &kp LPAR   &kp RPAR   &kp AT     &kp EXCL
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &trans     &trans     &trans         &trans     &trans     &trans
+                                  &trans     &trans     &to 0          &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
