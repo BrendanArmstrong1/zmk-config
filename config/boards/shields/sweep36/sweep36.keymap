@@ -45,7 +45,7 @@
         //│  '       │  Q       │  J       │  K       │  X       │   │  B       │  M       │  W       │  V       │  Z       │
             &ht 2 SQT  &kp Q      &kp J      &kp K      &kp X          &kp B      &kp M      &kp W      &kp V      &kp Z
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &kp LALT   &skl 1     &kp LSHFT      &kp SPACE  &kp LCTRL  &kp LGUI  
+                                  &kp LALT   &kp LSHFT  &skl 1         &kp SPACE  &kp LCTRL  &kp LGUI  
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
