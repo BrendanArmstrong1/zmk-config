@@ -51,7 +51,7 @@
         };
 
         Symbols {
-          bindings = 
+          bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  `       │  ;       │  \       │  %       │  +       │   │  -       │  [       │  ]       │  @       │   BCSP   │
             &kp GRAVE  &kp SEMI  &kp BSLH   &kp PRCNT  &kp PLUS       &kp MINUS  &kp LBKT   &kp RBKT   &kp AT      &kp BSPC
