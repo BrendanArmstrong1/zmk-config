@@ -43,9 +43,9 @@
             &kp A      &kp O      &kp E      &kp U      &kp I          &kp D      &kp H      &kp T      &kp N      &kp S
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ;       │  Q       │  J       │  K       │  X       │   │  B       │  M       │  W       │  V       │  Z       │
-            &ht 2 SEMI &kp Q      &kp J      &kp K      &kp X          &kp B      &kp M      &kp W      &kp V      &kp Z
+          &ht LALT SEMI &kp Q      &kp J      &kp K      &kp X          &kp B      &kp M      &kp W      &kp V      &kp Z
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &kp LALT   &kp LSHFT  &skl 1         &kp SPACE  &kp LCTRL  &kp LGUI  
+                                  &skl 2     &skl LSHFT &skl 1         &kp SPACE  &kp LCTRL  &kp LGUI  
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -70,14 +70,14 @@
         Numbers {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ layer 4  │  ,       │  .       │  /       │  +       │   │ -        │ 1        │ 2        │ 3        │  BCSP    │
+        //│ layer 3  │  ,       │  .       │  /       │  +       │   │ -        │ 1        │ 2        │ 3        │  BCSP    │
             &mo 3      &kp COMMA  &kp DOT    &kp FSLH   &kp PLUS      &kp MINUS  &kp N1     &kp N2     &kp N3      &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ INS      │  DEL     │  %       │  *       │  ^       │   │ ENTR     │ 4        │ 5        │ 6        │  0       │
             &kp INS    &kp DEL    &kp PRCNT  &kp ASTRK  &kp CARET     &kp ENTER  &kp N4     &kp N5     &kp N6      &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  LEFT    │  DOWN    │  UP      │  RIGHT   │   │ =        │ 7        │ 8        │ 9        │  !       │
-            &trans     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT     &kp EQUAL  &kp N7     &kp N8     &kp N9      &kp EXCL
+            &kp LALT   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT     &kp EQUAL  &kp N7     &kp N8     &kp N9      &kp EXCL
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &trans      &trans     &trans         &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
