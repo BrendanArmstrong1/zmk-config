@@ -28,7 +28,7 @@
         bindings = <&mo>;
         release-after-ms = <150>;
       };
-        sky: sticky_key_quick_release {
+        sky: sticky_mod_quick_release {
         compatible = "zmk,behavior-sticky-key";
         label = "STICKY_KEY_QUICK_RELEASE";
         #binding-cells = <1>;
