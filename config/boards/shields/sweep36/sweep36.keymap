@@ -18,7 +18,7 @@
             tapping-term-ms = <150>;
             quick-tap-ms = <100>;
             global-quick-tap;
-            bindings = <&mo>, <&kp>;
+            bindings = <&kp>, <&kp>;
         };
 
         skl: sticky_key_quick_release {
