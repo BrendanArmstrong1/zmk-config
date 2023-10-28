@@ -26,6 +26,7 @@
         label = "STICKY_KEY_QUICK_RELEASE";
         #binding-cells = <1>;
         bindings = <&mo>;
+        quick-release;
         release-after-ms = <150>;
       };
         sky: sticky_mod_quick_release {
@@ -33,6 +34,7 @@
         label = "STICKY_MOD_QUICK_RELEASE";
         #binding-cells = <1>;
         bindings = <&kp>;
+        quick-release;
         release-after-ms = <150>;
       };
 
