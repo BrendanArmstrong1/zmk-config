@@ -52,9 +52,9 @@
             &kp A      &kp O      &kp E      &kp U      &kp I          &kp D      &kp H      &kp T      &kp N      &kp S
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ;       │  Q       │  J       │  K       │  X       │   │  B       │  M       │  W       │  V       │  Z       │
-          &ht LALT SEMI &kp Q      &kp J      &kp K      &kp X          &kp B      &kp M      &kp W      &kp V      &kp Z
+            &skl 2     &kp Q      &kp J      &kp K      &kp X          &kp B      &kp M      &kp W      &kp V      &kp Z
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
-                                  &skl 2     &sky LSHFT &skl 1         &kp SPACE  &kp LCTRL  &kp LGUI
+                                  &kp LALT   &sky LSHFT &skl 1         &kp SPACE  &kp LCTRL  &kp LGUI
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -86,7 +86,7 @@
             &kp INS    &kp DEL    &kp PRCNT  &kp ASTRK  &kp AMPS      &kp ENTER  &kp N4     &kp N5     &kp N6      &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  LEFT    │  DOWN    │  UP      │  RIGHT   │   │ =        │ 7        │ 8        │ 9        │  !       │
-            &kp LALT   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT     &kp EQUAL  &kp N7     &kp N8     &kp N9      &kp EXCL
+            &trans     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT     &kp EQUAL  &kp N7     &kp N8     &kp N9      &kp EXCL
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &trans      &trans     &trans         &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
