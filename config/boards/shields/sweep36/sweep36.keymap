@@ -66,7 +66,7 @@
             &kp GRAVE  &kp LT     &kp GT     &kp BSLH   &kp PLUS       &kp MINUS  &kp LBKT   &kp RBKT   &kp AT      &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ESC     │  #       │  ~       │  *       │  TAB     │   │  ENTR    │  {       │  }       │  ?       │  /       │
-            &kp ESC    &kp HASH   &kp TILDE  &kp ASTRK  &kp TAB        &kp ENTER  &kp LBRC   &kp RBRC   &kp QMARK  &kp FSLH
+            &kp ESC    &kp HASH   &kp TILDE  &kp ASTRK  &kp SEMI        &kp ENTER  &kp LBRC   &kp RBRC   &kp QMARK  &kp FSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  :       │  ^       │  _       │  ;       │  |       │   │  =       │  (       │  )       │  $       │  !       │
             &kp COLON  &kp CARET  &kp UNDER  &kp AMPS   &kp PIPE       &kp EQUAL  &kp LPAR   &kp RPAR   &kp DLLR   &kp EXCL
@@ -83,7 +83,7 @@
             &mo 3      &kp COMMA  &kp DOT    &kp FSLH   &kp PLUS      &kp MINUS  &kp N1     &kp N2     &kp N3      &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ INS      │  DEL     │  %       │  *       │  &       │   │ ENTR     │ 4        │ 5        │ 6        │  0       │
-            &kp INS    &kp DEL    &kp PRCNT  &kp ASTRK  &kp SEMI      &kp ENTER  &kp N4     &kp N5     &kp N6      &kp N0
+            &kp INS    &kp DEL    &kp PRCNT  &kp ASTRK  &kp TAB      &kp ENTER  &kp N4     &kp N5     &kp N6      &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  LEFT    │  DOWN    │  UP      │  RIGHT   │   │ =        │ 7        │ 8        │ 9        │  !       │
             &trans     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT     &kp EQUAL  &kp N7     &kp N8     &kp N9      &kp EXCL
