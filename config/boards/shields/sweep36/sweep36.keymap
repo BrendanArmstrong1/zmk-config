@@ -15,8 +15,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <100>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
@@ -62,14 +62,14 @@
         Symbols {
           bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  `       │  <       │  >       │  \       │  +       │   │  -       │  [       │  ]       │  @       │   BCSP   │
-            &kp GRAVE  &kp LT     &kp GT     &kp BSLH   &kp PLUS       &kp MINUS  &kp LBKT   &kp RBKT   &kp AT      &kp BSPC
+        //│  `       │  <       │  >       │  /       │  +       │   │  -       │  [       │  ]       │  @       │   BCSP   │
+            &kp GRAVE  &kp LT     &kp GT     &kp FSLH   &kp PLUS       &kp MINUS  &kp LBKT   &kp RBKT   &kp AT      &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  ESC     │  #       │  ~       │  *       │  TAB     │   │  ENTR    │  {       │  }       │  ?       │  /       │
-            &kp ESC    &kp HASH   &kp TILDE  &kp ASTRK  &kp SEMI        &kp ENTER  &kp LBRC   &kp RBRC   &kp QMARK  &kp FSLH
+        //│  ESC     │  _       │  ~       │  *       │  TAB     │   │  ENTR    │  {       │  }       │  ?       │  \       │
+            &kp ESC    &kp UNDER   &kp TILDE  &kp ASTRK  &kp SEMI        &kp ENTER  &kp LBRC   &kp RBRC   &kp QMARK  &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  :       │  ^       │  _       │  ;       │  |       │   │  =       │  (       │  )       │  $       │  !       │
-            &kp COLON  &kp CARET  &kp UNDER  &kp AMPS   &kp PIPE       &kp EQUAL  &kp LPAR   &kp RPAR   &kp DLLR   &kp EXCL
+        //│  :       │  ^       │  #       │  ;       │  |       │   │  =       │  (       │  )       │  $       │  !       │
+            &kp COLON  &kp CARET  &kp HASH  &kp AMPS   &kp PIPE       &kp EQUAL  &kp LPAR   &kp RPAR   &kp DLLR   &kp EXCL
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &trans     &trans     &trans         &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
