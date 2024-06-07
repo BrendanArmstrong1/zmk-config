@@ -63,13 +63,13 @@
           bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  `       │  <       │  >       │  /       │  +       │   │  -       │  [       │  ]       │  @       │   BCSP   │
-            &kp GRAVE  &kp LT     &kp GT     &kp FSLH   &kp PLUS       &kp MINUS  &kp LBKT   &kp RBKT   &kp AT      &kp BSPC
+            &kp GRAVE  &kp LT      &kp GT     &kp FSLH   &kp PLUS       &kp MINUS  &kp LBKT   &kp RBKT   &kp AT      &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  ESC     │  _       │  ~       │  *       │  TAB     │   │  ENTR    │  {       │  }       │  ?       │  \       │
-            &kp ESC    &kp UNDER   &kp TILDE  &kp ASTRK  &kp SEMI        &kp ENTER  &kp LBRC   &kp RBRC   &kp QMARK  &kp BSLH
+        //│  ESC     │  _       │  ~       │  *       │  ;       │   │  ENTR    │  {       │  }       │  ?       │  \       │
+            &kp ESC    &kp UNDER   &kp TILDE  &kp ASTRK  &kp SEMI       &kp ENTER  &kp LBRC   &kp RBRC   &kp QMARK  &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  :       │  ^       │  #       │  ;       │  |       │   │  =       │  (       │  )       │  $       │  !       │
-            &kp COLON  &kp CARET  &kp HASH  &kp AMPS   &kp PIPE       &kp EQUAL  &kp LPAR   &kp RPAR   &kp DLLR   &kp EXCL
+        //│  :       │  ^       │  #       │  &       │  |       │   │  =       │  (       │  )       │  $       │  !       │
+            &kp COLON  &kp CARET   &kp HASH   &kp AMPS   &kp PIPE       &kp EQUAL  &kp LPAR   &kp RPAR   &kp DLLR   &kp EXCL
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &trans     &trans     &trans         &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
