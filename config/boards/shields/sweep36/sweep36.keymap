@@ -4,6 +4,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/mouse.h>
 
 
 / {
@@ -97,14 +98,14 @@
         System {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │ bt_sel 0 │ bt_sel 3 │ Trans    │ Trans    │   │ F1       │ F2       │ F3       │ F4       │ F5       │
-          &trans      &kp BT_SEL 0 &kp BT_SEL 3 &trans   &trans        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5
+        //│          │  F1      │  F2      │  F3      │  F4      │   │          │          │          │          │PROFILE 0 │
+            &trans     &kp F1     &kp F2     &kp F3     &kp F4        &trans       &trans     &trans     &trans     &bt BT_SEL 0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│BOOTLOADER| bt_sel 1 │ bt_sel 4 │ Trans    │ BT_clear │   │ F6       │ F7       │ F8       │ F9       │ F10      │
-          &bootloader &kp BT_SEL 1 &kp BT_SEL 4 &trans   &kp BT_CLR    &kp F6     &kp F7     &kp F8     &kp F9     &kp F10
+        //│  F5      | F6       │  F7      │  F8      │  F9      │   │BOOTLOADER│          │          │          │PROFILE 1 │
+            &kp F5     &kp F6     &kp F7     &kp F8     &kp F9        &bootloader  &trans     &trans     &trans     &bt BT_SEL 1
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│sys reset │ bt_sel 2 │ Trans    │ Trans    │ Trans    │   │ F11      │ F12      │ F1       │ Print scn│ CAPS LOCK│
-           &sys_reset &kp BT_SEL 2 &trans      &trans   &trans        &kp F11   &kp F12     &trans     &bt PSCRN  &bt CAPS
+        //│ F10      │ F11      │ F12      │ CLEAR BT │PROFILE 2 │   │          │          │          │ Caps Lck │ Print scn│
+            &kp F10    &kp F11    &kp F12    &kp PSCRN  &kp CAPS      &sys_reset   &trans     &trans     &bt BT_CLR &bt BT_SEL 2
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &trans     &trans     &trans         &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
