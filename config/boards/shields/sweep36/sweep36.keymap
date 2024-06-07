@@ -4,6 +4,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/mouse.h>
 
 
 / {
@@ -68,6 +69,7 @@
         //│  ESC     │  _       │  ~       │  *       │  TAB     │   │  ENTR    │  {       │  }       │  ?       │  \       │
             &kp ESC    &kp UNDER  &kp TILDE  &kp ASTRK  &kp SEMI       &kp ENTER  &kp LBRC   &kp RBRC   &kp QMARK  &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+
         //│  :       │  &       │  #       │  ^       │  |       │   │  =       │  $       │  <       │  >       │  !       │
             &kp COLON  &kp AMPS   &kp HASH  &kp CARET  &kp PIPE       &kp EQUAL  &kp DLLR   &kp LT     &kp GT     &kp EXCL
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
@@ -83,7 +85,7 @@
             &mo 3      &kp COMMA  &kp DOT    &kp FSLH   &kp PLUS      &kp MINUS  &kp N1     &kp N2     &kp N3      &ht LALT BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ INS      │  DEL     │  %       │  *       │  &       │   │ ENTR     │ 4        │ 5        │ 6        │  0       │
-          &kp LS(INS)  &kp DEL    &kp PRCNT  &kp ASTRK  &kp TAB      &kp ENTER  &kp N4     &kp N5     &kp N6      &kp N0
+          &kp LS(INS)  &kp DEL    &kp PRCNT  &kp ASTRK  &kp TAB       &kp ENTER  &kp N4     &kp N5     &kp N6      &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  LEFT    │  DOWN    │  UP      │  RIGHT   │   │ =        │ 7        │ 8        │ 9        │  !       │
             &kp COLON  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT     &kp EQUAL  &kp N7     &kp N8     &kp N9      &kp EXCL
@@ -97,10 +99,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │  F1      │  F2      │  F3      │  F4      │   │          │          │          │          │PROFILE 0 │
-            &trans     &kp F1     &kp F2     &kp F3     &kp F4          &trans       &trans     &trans     &trans     &bt BT_SEL 0
+            &trans     &kp F1     &kp F2     &kp F3     &kp F4        &trans       &mkp LCLK     &mmv MOVE_UP     &mkp RCLK     &bt BT_SEL 0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  F5      | F6       │  F7      │  F8      │  F9      │   │BOOTLOADER│          │          │          │PROFILE 1 │
-            &kp F5     &kp F6     &kp F7     &kp F8     &kp F9        &bootloader  &trans     &trans     &trans     &bt BT_SEL 1
+        &kp F5    &kp F6     &kp F7     &kp F8     &kp F9          &bootloader   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT     &bt BT_SEL 1
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ F10      │ F11      │ F12      │ CLEAR BT │PROFILE 2 │   │          │          │          │ Caps Lck │ Print scn│
             &kp F10    &kp F11    &kp F12    &kp PSCRN  &kp CAPS      &sys_reset   &trans     &trans     &bt BT_CLR &bt BT_SEL 2
