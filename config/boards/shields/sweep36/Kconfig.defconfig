@@ -4,7 +4,7 @@
 if SHIELD_SWEEP36_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Brendan_Colmak"
+    default "Brendan Colmak"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
