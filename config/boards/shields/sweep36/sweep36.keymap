@@ -63,15 +63,15 @@
         Symbols {
           bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  `       │  (       │  )       │  /       │  +       │   │  -       │  [       │  ]       │  @       │   BCSP   │
-            &kp GRAVE  &kp LPAR   &kp RPAR   &kp FSLH   &kp PLUS       &kp MINUS  &kp LBKT   &kp RBKT   &kp AT      &ht LALT BSPC
+        //│  !       │  (       │  )       │  /       │  +       │   │  -       │  [       │  ]       │  @       │   BCSP   │
+            &kp EXCL  &kp LPAR   &kp RPAR   &kp FSLH   &kp PLUS       &kp MINUS  &kp LBKT   &kp RBKT   &kp AT      &ht LALT BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  ESC     │  _       │  ~       │  *       │  TAB     │   │  ENTR    │  {       │  }       │  ?       │  \       │
+        //│  ESC     │  _       │  ~       │  *       │  ;       │   │  ENTR    │  {       │  }       │  ?       │  \       │
             &kp ESC    &kp UNDER  &kp TILDE  &kp ASTRK  &kp SEMI       &kp ENTER  &kp LBRC   &kp RBRC   &kp QMARK  &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
 
-        //│  :       │  &       │  #       │  ^       │  |       │   │  =       │  $       │  <       │  >       │  !       │
-            &kp COLON  &kp AMPS   &kp HASH  &kp CARET  &kp PIPE       &kp EQUAL  &kp DLLR   &kp LT     &kp GT     &kp EXCL
+        //│  :       │  ^       │  #       │  &       │  |       │   │  =       │  $       │  <       │  >       │  `       │
+            &kp COLON  &kp CARET  &kp HASH   &kp AMPS   &kp PIPE       &kp EQUAL  &kp DLLR   &kp LT     &kp GT     &kp GRAVE
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &trans     &trans     &trans         &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -84,7 +84,7 @@
         //│ layer 3  │  ,       │  .       │  /       │  +       │   │ -        │ 1        │ 2        │ 3        │  BCSP    │
             &mo 3      &kp COMMA  &kp DOT    &kp FSLH   &kp PLUS      &kp MINUS  &kp N1     &kp N2     &kp N3      &ht LALT BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ INS      │  DEL     │  %       │  *       │  &       │   │ ENTR     │ 4        │ 5        │ 6        │  0       │
+        //│ INS      │  DEL     │  %       │  *       │  TAB     │   │ ENTR     │ 4        │ 5        │ 6        │  0       │
           &kp LS(INS)  &kp DEL    &kp PRCNT  &kp ASTRK  &kp TAB       &kp ENTER  &kp N4     &kp N5     &kp N6      &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  LEFT    │  DOWN    │  UP      │  RIGHT   │   │ =        │ 7        │ 8        │ 9        │  !       │
@@ -98,14 +98,14 @@
         System {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │  F1      │  F2      │  F3      │  F4      │   │          │          │          │          │PROFILE 0 │
-            &trans     &kp F1     &kp F2     &kp F3     &kp F4        &trans       &mkp LCLK     &mmv MOVE_UP     &mkp RCLK     &bt BT_SEL 0
+        //│          │ bt_sel 0 │ bt_sel 3 │ Trans    │ Trans    │   │ F1       │ F2       │ F3       │ F4       │ F5       │
+          &trans      &kp BT_SEL 0 &kp BT_SEL 3 &trans   &trans        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  F5      | F6       │  F7      │  F8      │  F9      │   │BOOTLOADER│          │          │          │PROFILE 1 │
-        &kp F5    &kp F6     &kp F7     &kp F8     &kp F9          &bootloader   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT     &bt BT_SEL 1
+        //│BOOTLOADER| bt_sel 1 │ bt_sel 4 │ Trans    │ BT_clear │   │ F6       │ F7       │ F8       │ F9       │ F10      │
+          &bootloader &kp BT_SEL 1 &kp BT_SEL 4 &trans   &kp BT_CLR    &kp F6     &kp F7     &kp F8     &kp F9     &kp F10
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ F10      │ F11      │ F12      │ CLEAR BT │PROFILE 2 │   │          │          │          │ Caps Lck │ Print scn│
-            &kp F10    &kp F11    &kp F12    &kp PSCRN  &kp CAPS      &sys_reset   &trans     &trans     &bt BT_CLR &bt BT_SEL 2
+        //│sys reset │ bt_sel 2 │ Trans    │ Trans    │ Trans    │   │ F11      │ F12      │ F1       │ Print scn│ CAPS LOCK│
+           &sys_reset &kp BT_SEL 2 &trans      &trans   &trans        &kp F11   &kp F12     &trans     &bt PSCRN  &bt CAPS
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &trans     &trans     &trans         &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
