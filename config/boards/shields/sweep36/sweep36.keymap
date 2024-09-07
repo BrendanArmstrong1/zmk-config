@@ -62,11 +62,11 @@
         Symbols {
           bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  `       │  <       │  >       │  ;       │  +       │   │  -       │  [       │  @       │  ]       │   BCSP   │
+        //│  `       │  <       │          │  ;       │  +       │   │  -       │  [       │  @       │  ]       │   BCSP   │
             &kp GRAVE  &kp LT      &kp GT     &kp SEMI   &kp PLUS       &kp MINUS  &kp LBKT   &kp AT     &kp RBKT    &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  ESC     │  /       │  ^       │  *       │  _       │   │  ENTR    │  {       │  $       │  }       │  \       │
-            &kp ESC    &kp FSLH    &kp CARAT  &kp ASTRK  &kp UNDER      &kp ENTER  &kp LBRC   &kp DLLR  &kp RBRC   &kp BSLH
+            &kp ESC    &kp FSLH    &kp CARAT  &kp ASTRK  &kp UNDER    &kp ENTER   &kp LBRC   &kp DLLR  &kp RBRC   &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  :       │  LEFT    │  DOWN    │  UP      │  RIGHT   │   │  =       │  (       │  ~       │  )       │  !       │
             &kp COLON  &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT      &kp EQUAL  &kp LPAR   &kp TILDE  &kp RPAR   &kp EXCL
