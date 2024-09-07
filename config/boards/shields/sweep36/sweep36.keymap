@@ -62,14 +62,14 @@
         Symbols {
           bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  `       │  <       │  >       │  /       │  +       │   │  -       │  [       │  ]       │  @       │   BCSP   │
-            &kp GRAVE  &kp LT      &kp GT     &kp FSLH   &kp PLUS       &kp MINUS  &kp LBKT   &kp RBKT   &kp AT      &kp BSPC
+        //│  `       │  <       │  >       │  ;       │  +       │   │  -       │  [       │  @       │  ]       │   BCSP   │
+            &kp GRAVE  &kp LT      &kp GT     &kp SEMI   &kp PLUS       &kp MINUS  &kp LBKT   &kp AT     &kp RBKT    &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  ESC     │  _       │  ~       │  *       │  ;       │   │  ENTR    │  {       │  }       │  ?       │  \       │
-            &kp ESC    &kp UNDER   &kp TILDE  &kp ASTRK  &kp SEMI       &kp ENTER  &kp LBRC   &kp RBRC   &kp QMARK  &kp BSLH
+        //│  ESC     │  /       │  ^       │  *       │  _       │   │  ENTR    │  {       │  $       │  }       │  \       │
+            &kp ESC    &kp FSLH    &kp CARAT  &kp ASTRK  &kp UNDER      &kp ENTER  &kp LBRC   &kp DLLR  &kp RBRC   &kp BSLH
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  :       │  ^       │  #       │  &       │  |       │   │  =       │  (       │  )       │  $       │  !       │
-            &kp COLON  &kp CARET   &kp HASH   &kp AMPS   &kp PIPE       &kp EQUAL  &kp LPAR   &kp RPAR   &kp DLLR   &kp EXCL
+        //│  :       │  LEFT    │  DOWN    │  UP      │  RIGHT   │   │  =       │  (       │  ~       │  )       │  !       │
+            &kp COLON  &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT      &kp EQUAL  &kp LPAR   &kp TILDE  &kp RPAR   &kp EXCL
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &trans     &trans     &trans         &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -79,14 +79,14 @@
         Numbers {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ layer 3  │  ,       │  .       │  /       │  +       │   │ -        │ 1        │ 2        │ 3        │  BCSP    │
-            &mo 3      &kp COMMA  &kp DOT    &kp FSLH   &kp PLUS      &kp MINUS  &kp N1     &kp N2     &kp N3      &kp BSPC
+        //│ layer 3  │  ,       │  .       │  ;       │  +       │   │ -        │ 1        │ 2        │ 3        │  BCSP    │
+            &mo 3      &kp COMMA   &kp DOT    &kp SEMI   &kp PLUS      &kp MINUS   &kp N1     &kp N2     &kp N3      &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ INS      │  DEL     │  %       │  *       │  &       │   │ ENTR     │ 4        │ 5        │ 6        │  0       │
-            &kp INS    &kp DEL    &kp PRCNT  &kp ASTRK  &kp TAB      &kp ENTER  &kp N4     &kp N5     &kp N6      &kp N0
+        //│ INS      │  /       │  ^       │  *       │  TAB     │   │ ENTR     │ 4        │ 5        │ 6        │  0       │
+            &kp INS    &kp FSLH   &kp TILDE  &kp ASTRK  &kp TAB        &kp ENTER   &kp N4     &kp N5     &kp N6      &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │  LEFT    │  DOWN    │  UP      │  RIGHT   │   │ =        │ 7        │ 8        │ 9        │  !       │
-            &trans     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT     &kp EQUAL  &kp N7     &kp N8     &kp N9      &kp EXCL
+        //│          │  %       │  #       │  &       │  |       │   │ =        │ 7        │ 8        │ 9        │  !       │
+            &trans     &kp PRCNT  &kp HASH   &kp AMPS   &kp PIPE       &kp EQUAL   &kp N7     &kp N8     &kp N9      &kp EXCL
         //╰──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────╯
                                   &trans      &trans     &trans         &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -96,8 +96,8 @@
         System {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │  F1      │  F2      │  F3      │  F4      │   │          │          │          │          │PROFILE 0 │
-            &trans     &kp F1     &kp F2     &kp F3     &kp F4          &trans       &trans     &trans     &trans     &bt BT_SEL 0
+        //│          │  F1      │  F2      │  F3      │  F4      │   │  DEL     │          │          │          │PROFILE 0 │
+            &trans     &kp F1     &kp F2     &kp F3     &kp F4          &kp DEL      &trans     &trans     &trans     &bt BT_SEL 0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  F5      | F6       │  F7      │  F8      │  F9      │   │BOOTLOADER│          │          │          │PROFILE 1 │
             &kp F5     &kp F6     &kp F7     &kp F8     &kp F9        &bootloader  &trans     &trans     &trans     &bt BT_SEL 1
