@@ -46,8 +46,8 @@ keymap {
             bindings = <
                 &kp SQT     &kp COMMA  &kp DOT   &kp P     &kp Y       &kp F     &kp G     &kp C     &kp R     &kp L
                 &kp A       &kp O      &kp E     &kp U     &kp I       &kp D     &kp H     &kp T     &kp N     &kp S
-                &osl 2      &kp Q      &kp J     &kp K     &kp X       &kp B     &kp M     &kp W     &kp V     &kp Z
-                &mt LALT BSPC  &osm LSHFT  &mo 1     &kp SPACE  &kp LCTRL  &mt LGUI BSPC
+                &skl 2      &kp Q      &kp J     &kp K     &kp X       &kp B     &kp M     &kp W     &kp V     &kp Z
+                &ht LALT BSPC  &sky LSHFT  &skl 1     &kp SPACE  &kp LCTRL  &ht LGUI BSPC
             >;
         };
 
@@ -56,23 +56,23 @@ keymap {
                 &kp GRAVE  &kp LT     &kp GT    &kp SEMI   &kp PLUS     &kp MINUS &kp LBKT  &kp AT     &kp RBKT   &kp BSPC
                 &kp ESC    &kp FSLH   &kp CARET &kp ASTRK  &kp QMARK    &kp RET   &kp LBRC  &kp DLLR   &kp RBRC   &kp BSLH
                 &kp COLON  &kp UNDER  &kp HASH  &kp AMPS   &kp PIPE     &kp EQUAL &kp LPAR  &kp TILDE  &kp RPAR   &kp EXCL
-                &mt LALT DEL  &osm LSHFT  &trans    &trans     &trans     &trans
+                &ht LALT DEL  &sky LSHFT  &trans    &trans     &trans     &trans
             >;
         };
 
         Numbers {
             bindings = <
-                &mo 3      &kp COMMA  &kp DOT    &kp SEMI   &kp PLUS     &kp MINUS &kp N1    &kp N2     &kp N3     &kp BSPC
-                &kp LS(INS)  &kp FSLH   &kp CARET &kp ASTRK  &kp TAB      &kp RET   &kp N4    &kp N5     &kp N6     &kp N0
-                &trans     &kp PRCNT  &kp HASH  &kp AMPS   &kp PIPE     &kp EQUAL &kp N7    &kp N8     &kp N9     &kp EXCL
-                &mt LALT DEL  &osm LSHFT  &kp DLLR   &trans     &trans     &trans
+                &skl 3      &kp COMMA  &kp DOT   &kp SEMI   &kp PLUS     &kp MINUS &kp N1    &kp N2     &kp N3     &kp BSPC
+                &kp LS(INS) &kp FSLH   &kp CARET &kp ASTRK  &kp TAB      &kp RET   &kp N4    &kp N5     &kp N6     &kp N0
+                &trans      &kp PRCNT  &kp HASH  &kp AMPS   &kp PIPE     &kp EQUAL &kp N7    &kp N8     &kp N9     &kp EXCL
+                &ht LALT DEL  &sky LSHFT  &kp DLLR   &trans     &trans     &trans
             >;
         };
 
         alternate {
             bindings = <
                 &trans     &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT    &kp DEL    &none     &none     &none     &bt BT_SEL 0
-                &mo 4      &none      &kp LC(C) &kp LS(INS)&kp LC(V)    &ms LEFT   &ms DOWN  &ms UP    &ms RIGHT &ms BTN1
+                &skl 4     &none      &kp LC(C) &kp LS(INS)&kp LC(V)    &ms LEFT   &ms DOWN  &ms UP    &ms RIGHT &ms BTN1
                 &trans     &none      &none     &lctl A    &none        &wh DOWN   &none     &none     &wh RIGHT &acl 0
                 &kp PSCRN  &kp CAPS   &lctl     &trans     &trans       &trans
             >;
